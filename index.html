@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brian Amol Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar/dist/github-calendar-responsive.css"
+    />
+    <script src="https://unpkg.com/github-calendar/dist/github-calendar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <h1 class="logo">Brian Amol</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>                  
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Hi, I'm Brian Amol</h2>
+          <p>Full-Stack Developer | Backend Enthusiast | Problem Solver</p>
+          <br />
+          <br />
+          <a href="#projects" class="cta-button" style="border-radius: 50px"
+            >View My Work</a
+          >
+        </div>
+        <br />
+      </div>
+    </section>
+
+    <section class="portfolio-stats fade-in">
+      <h2>My Portfolio Stats</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Projects Completed</h3>
+          <p class="stat-value">15+</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Years of Experience</h3>
+          <p class="stat-value">2+</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Tech Stack Mastered</h3>
+          <p class="stat-value">10+</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>GitHub Contributions</h3>
+          <p class="stat-value">250+</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="skills fade-in">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="assets/icons/icons8-nodejs.svg" alt="Node.js" />
+          <h3>Node.js</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%"></div>
+          </div>
+          <p>Backend development with REST APIs and microservices.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/icons/icons8-docker.svg" alt="Docker" />
+          <h3>Docker</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%"></div>
+          </div>
+          <p>Containerization and deployment of applications.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/icons/icons8-html.svg" alt="HTML" />
+          <h3>HTML</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+          <p>Structuring and organizing web content.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/icons/icons8-css.svg" alt="CSS" />
+          <h3>CSS</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%"></div>
+          </div>
+          <p>Designing responsive and visually appealing web pages.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/icons/icons8-angular.svg" alt="Angular" />
+          <h3>Angular</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%"></div>
+          </div>
+          <p>Building dynamic UI with reactive forms and state management.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/icons/icons8-react.svg" alt="React" />
+          <h3>React</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%"></div>
+          </div>
+          <p>Developing reusable UI components for interactive web apps.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/icons/icons8-mongodb.svg" alt="MongoDB" />
+          <h3>MongoDB</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 20%"></div>
+          </div>
+          <p>NoSQL database for storing JSON-like documents flexibly.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/icons/icons8-mysql.svg" alt="MySQL" />
+          <h3>MySQL</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%"></div>
+          </div>
+          <p>Relational database design and management.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/icons/icons8-git.svg" alt="Git" />
+          <h3>Git</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+          <p>Version control and collaborative development.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/icons/icons8-javascript.svg" alt="JavaScript" />
+          <h3>JavaScript</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 30%"></div>
+          </div>
+          <p>Building dynamic client-side and server-side applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">What I Offer</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              Crafting modern, responsive, and interactive websites using
+              cutting-edge technologies.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-database"></i>
+            <h3>Backend Development</h3>
+            <p>
+              Building robust and scalable backend solutions with MySQL,
+              Node.js, and Docker.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-server"></i>
+            <h3>API Development</h3>
+            <p>
+              Creating secure and high-performance APIs for seamless
+              integrations.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud & DevOps</h3>
+            <p>
+              Deploying applications using Docker and cloud platforms for
+              reliability and scalability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-me">
+      <h2>Why Work With Me?</h2>
+      <div class="why-me-grid">
+        <div class="why-card">
+          <i class="fas fa-code"></i>
+          <h3>Full-Stack Proficiency</h3>
+          <p>
+            Experienced in backend (Node.js, MySQL) and frontend (Angular,
+            React, JavaScript).
+          </p>
+        </div>
+        <div class="why-card">
+          <i class="fas fa-tools"></i>
+          <h3>Modern Development Tools</h3>
+          <p>
+            Familiar with Docker, Git, and CI/CD pipelines to streamline
+            development.
+          </p>
+        </div>
+        <div class="why-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Problem-Solving Mindset</h3>
+          <p>
+            Skilled at debugging and optimizing performance for scalable
+            applications.
+          </p>
+        </div>
+        <div class="why-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Continuous Learning</h3>
+          <p>Always updating my skills to stay ahead in the tech industry.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-carousel">
+          <button class="carousel-btn prev">&#10094;</button>
+          <div class="carousel-track">
+            <div class="project-card">
+              <h3>School Project</h3>
+              <img src="assets/images/Screenshot 2025-02-01 211556.png" alt="Brian's Apartments">
+              <P>Brian's Apartments School Project<P/>
+            </div>
+            <div class="project-card">
+              <h3>Participated in Development</h3>
+              <p>Sidian auth page</p>
+              <img src="assets/images/Screenshot 2024-03-20 124117.png" alt="">
+            </div>
+            <div class="project-card">
+              <h3>LuxBNB school project</h3>
+              <p>Lux-BNB</p>
+              <img src="assets/images/Screenshot 2025-01-29 210603.png" alt="">
+            </div>
+            <div class="project-card">
+              <h3>Project 4</h3>
+              <p>.</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 5</h3>
+              <p>.</p>
+            </div>
+          </div>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="github-activity" class="github-activity">
+      <div class="container">
+        <h2 class="section-title">GitHub Activity</h2>
+        <div id="github-calendar"></div>
+        <canvas id="github-stats-chart"></canvas>
+      </div>
+      <div class="container">
+        <h2 class="section-title">Latest Dev.to Articles</h2>
+        <div id="devto-articles"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-container">
+        <div class="about-text">
+          <h2>About Me <span class="underline"></span></h2>
+          <p>
+            I'm <strong>Brian Amol</strong>, a
+            <span class="outline">Full-Stack Developer</span> specializing in
+            <span class="outline">Node.js</span>,
+            <span class="outline">MySQL</span>,
+            <span class="outline">Angular</span>, and
+            <span class="outline">Docker</span>. I build
+            <span class="outline">scalable</span>,
+            <span class="outline">efficient</span>, and
+            <span class="outline">user-friendly</span> applications that solve
+            real-world problems.
+          </p>
+          <p>
+            With expertise in <span class="outline">API development</span>,
+            <span class="outline">database management</span>, and
+            <span class="outline">UI integration</span>, I’m passionate about
+            delivering
+            <span class="outline">high-performance applications</span> and
+            <span class="outline">crafting seamless user experiences</span>.
+          </p>
+          <div class="about-icons">
+            <i class="fab fa-node"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-docker"></i>
+            <i class="fab fa-angular"></i>
+          </div>
+          <a href="#projects" class="cta-button" style="border-radius: 10px"
+            >View My Work</a
+          >
+        </div>
+        <div class="about-image">
+          <img
+            src="assets/images/about-image.png"
+            alt="Brian Amol - Full-Stack Developer"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <span class="underline"></span>
+        <p class="contact-text">
+          Have a project in mind? Let's build something great together!
+        </p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>
+                Email:
+                <a href="mailto:brianamol25@gmail.com">brianamol25@gmail.com</a>
+              </p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>Phone: <a href="tel:+254799685856">+254 799685856</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Location: Nairobi, Kenya</p>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/brianamol" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/brianamol" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/brianamol" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="send-btn" style="border-radius: 10px">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="portfolio-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>Brian Amol</h2>
+          <p>Full-Stack Developer | Tech Enthusiast</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <h3>Follow Me</h3>
+          <div class="social-icons">
+            <a href="https://github.com/Brianamol" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/Brian Amol" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/@BrianAmol4" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i>
+              </i
+            ></a>
+            <a href="brianamol25@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-credit">
+        &copy; <span id="year"></span> Brian Amol. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
